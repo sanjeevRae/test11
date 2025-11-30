@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Runner Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="1000" height="350"></canvas>
+        <div class="ui">
+            <div class="bank-row">
+                <div id="bankBalance" class="bank-pill">Bank Balance: 100</div>
+                <div id="highBankBadge" class="high-badge">High: 0</div>
+            </div>
+
+            <div id="gameOver" class="game-over" style="display:none;">
+                <div class="game-over-inner">
+                    <div id="finalScore" class="final-score">Bank Balance: 100</div>
+                    <div id="highScore" class="high-score">High Bank: 0</div>
+                    <div class="game-over-actions">
+                        <button id="restartBtn" class="btn primary">Restart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-jump" id="mobileJumpBtn">Jump</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
